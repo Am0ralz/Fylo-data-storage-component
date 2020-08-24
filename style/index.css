@@ -1,0 +1,49 @@
+:root {
+    --pale-blue: hsl(243, 100%, 93%);
+    --grayish-blue: hsl(229, 7%, 55%);
+    --dark-blue: hsl(228, 56%, 26%);
+    --very-dark-blue: hsl(229, 57%, 11%);
+    --peach:hsl(6, 100%, 80%);
+    --pink:hsl(335, 100%, 65%);
+    --normal:400;
+    --bold:700;
+}
+@font-face{
+    font-family: 'Raleway' ;
+    src: url('https://fonts.google.com/specimen/Raleway');
+
+}
+html, body {
+    background:hsl(229, 57%, 11%);
+    width:1440px;
+    font-family: Raleway, Arial, Helvetica, sans-serif ;
+    font-weight: 400;
+    font-size: 14px; 
+    color: var(--pale-blue);
+}
+.bold{
+    font-weight: var(--bold);
+}
+
+.bar {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 20px;
+    background-color: #2a2a2a;
+}
+.progress {
+    display: block;
+    width: 4%;
+    height: 100%;
+    background-color: tomato;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
