@@ -13,10 +13,15 @@
     src: url('https://fonts.google.com/specimen/Raleway');
 
 }
-html, body {
+html, body { 
     background:hsl(229, 57%, 11%);
+    background-image: url('../images/bg-desktop.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom; 
+    height: 100%;
     width:1440px;
-    font-family: Raleway, Arial, Helvetica, sans-serif ;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif ;
     font-weight: 400;
     font-size: 14px; 
     color: var(--pale-blue);
@@ -25,7 +30,23 @@ html, body {
     font-weight: var(--bold);
 }
 
-.bar {
+.container {
+    border: 1px solid black;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 300px 600px;
+    grid-template-rows:200px  ;
+    grid-gap: 40px;
+    justify-content: center;
+    align-content: center;
+            }
+.fylo-buttons{
+    background: var(--dark-blue);
+}
+.fylo-storage-progress{
+    background: var(--dark-blue);
+}
+/* .bar {
     display: block;
     width: 90%;
     margin: 0 auto;
@@ -39,7 +60,7 @@ html, body {
     width: 4%;
     height: 100%;
     background-color: tomato;
-}
+} */
 .attribution { 
     font-size: 11px; 
     text-align: center; 
