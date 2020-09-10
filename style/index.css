@@ -13,19 +13,23 @@
     src: url('https://fonts.google.com/specimen/Raleway');
 
 }
-html, body { 
+html{
     background:hsl(229, 57%, 11%);
     background-image: url('../images/bg-desktop.png');
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: bottom; 
-    height: 100%;
-    width:1440px;
     font-family: 'Raleway', Arial, Helvetica, sans-serif ;
     font-weight: 400;
     font-size: 14px; 
     color: var(--pale-blue);
+
 }
+html,body{
+    width:1440px;
+    height: 800px;
+    margin: 0;
+}
+
 .bold{
     font-weight: var(--bold);
 }
@@ -34,18 +38,70 @@ html, body {
     border: 1px solid black;
     height: 100%;
     display: grid;
-    grid-template-columns: 300px 600px;
-    grid-template-rows:200px  ;
-    grid-gap: 40px;
+    grid-template-columns: 336px 528px;
+    grid-template-rows:200px; 
+    grid-gap: 24px;
     justify-content: center;
     align-content: center;
             }
 .fylo-buttons{
     background: var(--dark-blue);
+    border-radius: 12px 100px 12px 12px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr) ;
+    grid-template-rows:1fr 1fr ; 
 }
-.fylo-storage-progress{
+
+
+.fylo-buttons > div {
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+ #logo {
+    align-self:center;
+}
+
+ #buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+   
+    
+ }
+    
+ #buttons > div{
+    background: var(--very-dark-blue);
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+ } 
+
+ #buttons > div> input{
+    display: block;
+    margin: auto;
+    
+ }
+
+.fylo-storage-progress-container{
+    display: grid;
+    grid-template-rows:repeat(12, 1fr); 
+    grid-template-columns: 1fr 17fr 1fr ;
+}
+#fylo-storage-progress{
     background: var(--dark-blue);
+    border-radius: 12px;
+    grid-row-start: 3;
+    grid-row-end: span 10;
+    grid-column-start: 2;
 }
+    
+/* #fylo-storage-progress > div{
+    
+    grid-column-end: span 1;
+} */
 /* .bar {
     display: block;
     width: 90%;
@@ -65,6 +121,6 @@ html, body {
     font-size: 11px; 
     text-align: center; 
 }
-.attribution a { 
+/* .attribution a { 
     color: hsl(228, 45%, 44%); 
-}
+} */
